@@ -7,6 +7,8 @@ from .models import Album
 def index(request):
     all_albums = Album.objects.all()
     return render(request, 'music/index.html',{'all_albums':all_albums})
+def folder(request):
+
 
 def detail(request, album_id):
     try:
